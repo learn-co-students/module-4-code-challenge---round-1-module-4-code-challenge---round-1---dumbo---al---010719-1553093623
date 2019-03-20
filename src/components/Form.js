@@ -17,11 +17,16 @@ class Form extends React.Component {
   currentHandler = (event) => {
     event.preventDefault()
     this.props.submitHandler(this.state)
+    this.setState({
+      title: '',
+      author: '',
+      img: ''
+    })
   }
 
   render() {
     return (
-      <div>
+      <div className="form-style-5">
         <h2>Create Book Form</h2>
         <form  onSubmit={this.currentHandler } onChange={this.onChange}>
           <input type="text" name="title" placeholder="title" value={this.state.title} />

@@ -40,8 +40,14 @@ class App extends Component {
   render() {
     return (
       <div className="book-container">
+        <div className="list">
+        <h1>Book List<div className="tiny">a beautiful collection</div></h1>
         <BookList submitHandler={this.submitHandler} click={this.addBook} books={this.state.books}/>
+        </div>
+        <div className="shelf">
+        <h1>Book Shelf <div className="tiny">just make your shelf grow</div> </h1>
         <Bookshelf click={this.removeBook} books={this.state.bookshelf}/>
+        </div>
       </div>
     );
   }

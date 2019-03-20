@@ -7,7 +7,6 @@ class BookList extends Component {
     let booksArr = this.props.books.map((book) => { return <Book click={this.props.click} oneBook={book}/>})
     return (
       <div className="book-list">
-        <h1>Book List</h1>
         <Form submitHandler={this.props.submitHandler}/>
         <ul>{booksArr}</ul>
       </div>
