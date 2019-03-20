@@ -31,3 +31,9 @@
     transform: rotate(360deg);
   }
 }
+
+.book-container {
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+}
