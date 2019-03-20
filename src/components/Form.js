@@ -15,9 +15,9 @@ class Form extends React.Component {
     e.preventDefault()
     this.props.handleNewBook(this.state)
     this.setState({
-      name: "",
+      title: "",
       author: "",
-      title: ""
+      img: ""
     })
   }
 

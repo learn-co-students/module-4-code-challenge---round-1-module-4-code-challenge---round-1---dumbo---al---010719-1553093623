@@ -6,7 +6,7 @@ const Bookshelf = props => {
     <Book key={bookObj.id || bookObj.title} book={bookObj} handleOnBookClick={props.handleOnBookClick} bookClicked={props.bookClicked}/>
   ))
   return (
-    <div>
+    <div className="bookshelf">
       <h1>Book Shelf</h1>
       <ul>{bookComponents}</ul>
     </div>
