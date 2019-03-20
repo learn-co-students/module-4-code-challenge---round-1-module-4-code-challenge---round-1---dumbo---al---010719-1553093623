@@ -3,6 +3,11 @@ img {
   height: auto;
 }
 
+img:hover {
+  width: 170px;
+  height: auto;
+}
+
 input[type=text]{
   color: white;
   background-color: none;
