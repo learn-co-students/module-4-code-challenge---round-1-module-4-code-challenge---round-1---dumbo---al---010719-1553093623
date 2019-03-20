@@ -31,3 +31,22 @@
     transform: rotate(360deg);
   }
 }
+
+img {
+  height: 100px;
+  width: 100px
+}
+
+.book-list {
+  float: left;
+  margin-left: 100px;
+  overflow-y:auto;
+  max-height: 1000px;
+}
+
+.book-shelf {
+  float: right;
+  margin-right: 500px;
+  overflow-y:auto;
+  max-height: 1000px;
+}
