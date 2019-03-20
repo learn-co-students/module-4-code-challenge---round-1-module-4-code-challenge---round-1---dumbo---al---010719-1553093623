@@ -31,3 +31,19 @@
     transform: rotate(360deg);
   }
 }
+
+.book-list {
+  width: 50%;
+  display: inline;
+  float: left;
+}
+
+.book-shelf {
+  width: 50%;
+  display: inline;
+  float: right;
+}
+
+img {
+  width: 100px;
+}
