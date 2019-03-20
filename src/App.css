@@ -23,6 +23,39 @@
   color: #61dafb;
 }
 
+.book-list {
+  /* text-align: center; */
+  height: 100vh;
+  width: 20%;
+  float: left;
+  overflow: auto;
+}
+
+.book-shelf {
+    width: 20%;
+  height: 100vh;
+  float: inherit;
+  overflow: auto;
+}
+
+.form {
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+
+img {
+  max-width: 30%;
+  max-height: 30%;
+  transition: all .2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
