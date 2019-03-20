@@ -3,9 +3,8 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 1s ease-in-out;
   height: 40vmin;
-  pointer-events: none;
 }
 
 .App-header {
@@ -30,4 +29,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.book-list{
+  text-align: center;
+  width: 30%;
+  background-color: pink;
+  display:inline;
+  float:left;
+
+}
+.book-shelf{
+  width: 70%;
+  display:inline;
+  float:right;
+  text-align: center;
+}
+.book{
+  width: 50%;
+  margin: auto;
+  float: none;
+}
+
+img {
+  width: 100px;
+  height: auto;
 }
