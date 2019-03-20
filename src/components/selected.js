@@ -1,6 +1,6 @@
 import React from "react";
 
-const Book = props => {
+const Selected = props => {
   return (
     <div>
       <h2>{props.bookObj.name}</h2>
@@ -9,4 +9,4 @@ const Book = props => {
   );
 };
 
-export default Book;
+export default Selected;

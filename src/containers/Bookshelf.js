@@ -1,11 +1,13 @@
 import React from "react";
-import Book from "../components/Book";
+import Selected from "../components/selected";
 
 const Bookshelf = props => {
+
   return (
     <div>
       <h1>Book Shelf</h1>
-      <ul>{/*render list of books here*/}</ul>
+      <img onClick={(e) => props.onClick(e, props.selectedBook)}src={props.selectedBook.img}/>
+
     </div>
   );
 };
