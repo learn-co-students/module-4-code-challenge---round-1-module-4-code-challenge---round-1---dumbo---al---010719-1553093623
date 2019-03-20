@@ -4,7 +4,7 @@ const Book = props => {
   return (
     <div>
       <h2>{props.book.title}</h2>
-      <img src={props.book.img} onClick={() => props.handleClickBook(props.book)} />
+      <img src={props.book.img} alt="book" onClick={() => props.handleClickBook(props.book)} />
     </div>
   );
 };
