@@ -1,13 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import Book from "../components/Book";
 
-const Bookshelf = props => {
-  return (
-    <div>
-      <h1>Book Shelf</h1>
-      <ul>{/*render list of books here*/}</ul>
-    </div>
-  );
-};
+class Bookshelf extends Component {
+  render() {
+    const bookList = this.props.books.map(books => (
+      <Book
+        key={books.id}
+        books={books}
+        clickHandler={this.props.clickHandler}
+      />
+    ));
+    return (
+      <div className="book-list">
+        <h1>Book Shelf</h1>
+
+        <ul>{bookList}</ul>
+      </div>
+    );
+  }
+}
 
 export default Bookshelf;
