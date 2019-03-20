@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import Book from "../components/Book";
-import Form from "../components/Form";
+
 
 class BookList extends Component {
   render() {
+
+      let bookList = this.props.books.map(bookObj => <Book book={bookObj} key={bookObj.id} clickHandler={this.props.clickHandler}/>)
     return (
       <div className="book-list">
         <h1>Book List</h1>
-        <Form />
-        <ul>{/*render list of books here*/}</ul>
+        <ul>{bookList}</ul>
       </div>
     );
   }
