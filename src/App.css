@@ -31,3 +31,14 @@
     transform: rotate(360deg);
   }
 }
+
+.book-container{
+  display: flex;
+}
+.book-list{
+  max-width: 30%
+}
+.book-shelf{
+  align:right;
+  max-width: 30%
+}
