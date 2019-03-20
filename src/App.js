@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   handleRemove=(bookObj)=>{
-      const newShelf=[...this.state.bookShelf].filter(book => book.id!== bookObj.id)
+      const newShelf=[...this.state.bookShelf].filter(book => book.title.toLowerCase()!== bookObj.title.toLowerCase())
       this.setState({
         bookShelf: newShelf
       })

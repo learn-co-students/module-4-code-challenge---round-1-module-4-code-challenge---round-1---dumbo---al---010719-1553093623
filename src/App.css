@@ -23,6 +23,18 @@
   color: #61dafb;
 }
 
+.book-list {
+  position: relative;
+  float: left;
+  width: 50%
+}
+
+.book-shelf {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
