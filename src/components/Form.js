@@ -26,7 +26,7 @@ class Form extends React.Component {
   render() {
     return (
       <div className="book-form">
-        <h1>Add a Book</h1>
+        <h5>Add a Book: </h5>
         <form onSubmit={this.handleSubmit}>
           <input type="text" name="title" placeholder="Title" value={this.state.title} onChange={this.handleChange}/>
           <input type="text" name="author" placeholder="Author" value={this.state.author} onChange={this.handleChange}/>
