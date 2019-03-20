@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   handleClickBookList = (book) => {
-    let foundBook = [...this.state.bookShelf].find(bookObj => book.id === bookObj.id)
+    let foundBook = [...this.state.bookShelf].find(bookObj => bookObj.title === book.title)
     console.log(foundBook);
     if(!foundBook) {
       this.setState({
@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   handleClickBookShelf = (book) => {
-    let filterBookShelf = [...this.state.bookShelf].filter(bookObj => bookObj.id !== book.id)
+    let filterBookShelf = [...this.state.bookShelf].filter(bookObj => bookObj.title !== book.title)
     this.setState({
       bookShelf: filterBookShelf
     })
