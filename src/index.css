@@ -20,14 +20,28 @@ img {
 }
 
 img:hover {
-  transform: scale(2.1)
+  transform: scale(2.5)
+}
+
+.blinking {
+    animation:blinkingText 1s infinite;
+  }
+
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
 }
 
 .left {
-  width: 50%;
-  float: left
+  width: 40%;
+  float: left;
+  text-align: center
 }
 .right {
-  width: 50%;
-  float: right
+  width: 60%;
+  float: right;
+  text-align: center
 }

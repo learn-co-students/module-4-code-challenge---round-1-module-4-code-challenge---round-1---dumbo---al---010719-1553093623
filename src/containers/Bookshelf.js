@@ -6,7 +6,7 @@ const Bookshelf = props => {
   let arrBooks = props.books.map(book => <Book book={book} handleShelf={props.handleShelf}/>)
   return (
     <div className="right">
-      <h1>Book Shelf</h1>
+      <h1 className="blinking">Book Shelf</h1>
       <ul>{arrBooks}</ul>
     </div>
   );
