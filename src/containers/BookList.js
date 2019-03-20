@@ -5,10 +5,10 @@ import Form from "../components/Form";
 class BookList extends Component {
   render() {
     return (
-      <div className="book-list">
+      <div className="form">
         <h1>Book List</h1>
-        <Form />
-        <ul>{/*render list of books here*/}</ul>
+        <Form handleSubmit={this.props.handleSubmit} handleForm={this.props.handleForm} data={this.props.data} />
+        <ul>{this.props.data.allBooks.map(book=><Book container={"bookList"} handleBookClick={this.props.handleBookClick} bookInfo={book} data={this.props.data} key={book.id} />)}</ul>
       </div>
     );
   }
