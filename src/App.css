@@ -31,3 +31,21 @@
     transform: rotate(360deg);
   }
 }
+
+input, button{
+  height: 2rem;
+  font-size: 1.5rem;
+}
+
+.book-container{
+  display:flex;
+  flex-direction: row;
+}
+
+.book-shelf{
+  padding-left: 30px;
+}
+
+img{
+  width: 200px;
+}
